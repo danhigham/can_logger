@@ -68,6 +68,15 @@ void MCP2515_ISR()
 
 void loop()
 {
+    // clear screen
+    
+    // print current list
+    
+    // loop through current list and expire old entries
+    
+    // loop through common list and expire old entries
+  
+  
     if(flagRecv) 
     {                                   // check if get data
 
@@ -91,6 +100,14 @@ void loop()
               dataFile.print(canId);
               dataFile.print("\t");
             }
+
+            // create log entry struct with current timestamp
+
+            // is the message already in the common list
+            
+            // yes - remove the current entry and replace with new one
+            
+            // no - add to current list
 
             // print the data
             for(int i = 0; i<len; i++)
